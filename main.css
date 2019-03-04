@@ -11,7 +11,7 @@ html, body {
     
 }
 
-.background {
+.sidebar {
     background-image: url(bk.jpg);
     background-size: cover;
     height: 100%;
@@ -19,36 +19,48 @@ html, body {
 }
 
 
-.list {
+//.list {
     display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
+    justify-content: flex-start;
     justify-content: space-between;
-    line-height: 30px;
-    
-    
 }
 
 
+//.navigation{
 
-li {
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-between;
+}
+
+//.list {
+    display: flex;
+    justify-content: flex-end;
+    //flex-wrap: wrap;
+    justify-content: space-between;
+    line-height: 30px;  
+}
+
+//.list li {
+    padding: 1em;
     color:white;
     list-style-type: none;
     border: solid white;
-    border-radius: 50px;
-    display: flex;
-    flex: 0 1 200px;
-    
-
+    border-radius: 50px;  
 }
 
+
+
+
 a {
-    color: white;
+    color:white;
     font-size: 40px;
     text-decoration: none;
     font-family:'Roboto Slab', serif;
     //transition: width 1s;
 }
+
+
 
  //.list, a:hover {
    height: 100px;
@@ -56,7 +68,6 @@ a {
 
 #motto {
     height: 100%;
-    margin-top: 720px;
     animation: 11s slidy infinite;
 }
 
@@ -101,6 +112,26 @@ footer {
 }
 
 nav {
-    position: sticky;
+    position: fixed;
     top: 0;
+}
+
+.interests_1 {
+    background-color: rgb(48, 48, 48);
+}
+
+.list2 {
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+}
+
+h2 {
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 50px;
+}
+
+.interests_1 {
+    padding: 10em;
 }
